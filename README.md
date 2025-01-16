@@ -1,2 +1,2 @@
 # Air_Quality
-[kaggle https://www.kaggle.com/datasets/iabhishekofficial/mobile-price-classification/data]
+(https://huggingface.co/datasets/sidSircar2103/kaggle_air_quality_dataset/tree/main)
