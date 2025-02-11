@@ -27,6 +27,7 @@ Key highlights include:
 The dataset includes the following attributes:
 - Various pollutant concentrations (e.g., CO, NO2, PM2.5, PM10, O3).
 - Meteorological data (e.g., temperature, humidity, wind speed).
+- Hospital data (e.g. RespiratoryCases, CardiovascularCases, HospitalAdmissions)
 
 ### Target
 The target variable is represented as:
