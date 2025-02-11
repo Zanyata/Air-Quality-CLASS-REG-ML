@@ -6,9 +6,7 @@ This project aims to **predict air quality levels** using machine learning (ML) 
 - [Overview](#overview)
 - [Dataset](#dataset)
 - [Project Structure](#project-structure)
-- [Features](#features)
-- [Models](#models)
-- [Installation](#installation)
+- [Methodology](#methodology)
 
 ## Overview
 - Understand the impact of various pollutants on air quality.
