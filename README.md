@@ -1,73 +1,88 @@
 # Air Quality Classification & Regression Project
 
-This project aims to **predict air quality levels** using machine learning (ML) and deep learning (NN) models. It involves **data preprocessing, exploratory data analysis (EDA), model selection, hyperparameter tuning, and model evaluation** to determine the best-performing algorithm.
+## Overview
+This project addresses the challenge of assessing the health impact of air pollution using machine learning techniques. Both classification and regression models were developed and evaluated to predict health outcomes based on various air quality indicators.
+
 
 ## Table of Contents
-- [Overview](#overview)
+- [Key Highlights](#Key-Highlights)
 - [Dataset](#dataset)
-- [Project Structure](#project-structure)
-- [Methodology](#methodology)
+- [Models Evaluated](#Models-Evaluated)
+- [Best Performing Model](#Best-Performing-Model)
+- [Key Takeaways](#Key-Takeaways)
+- [Project Organization](#Project-Organization)
+- [Installation & Usage](#Installation-&-Usage)
 
-## Overview
-- Understand the impact of various pollutants on air quality.
-- Compare different ML models (e.g., XGBoost, CatBoost, LightGBM).
-- Experiment with **Neural Networks (NN)** to check deep learning performance.
-- Evaluate model **overfitting** and generalization performance.
-  
-Key highlights include:
+
+## Key Highlights:
 - Comprehensive exploratory data analysis (EDA)
 - Hyperparameter tuning
 - Machine Learning
 - Deep Learning
 
+
 ## Dataset
-- **Source:** [link](https://www.kaggle.com/datasets/rabieelkharoua/air-quality-and-health-impact-dataset/data).
-  
-### Features
-The dataset includes the following attributes:
-- Various pollutant concentrations (e.g., CO, NO2, PM2.5, PM10, O3).
-- Meteorological data (e.g., temperature, humidity, wind speed).
-- Hospital data (e.g. RespiratoryCases, CardiovascularCases, HospitalAdmissions)
+* **Numerical Features:** All features
+* **Target Variable:** 
 
-### Target
-The target variable is represented as:
-- **Target Variable:** HealthImpactClass - classification; HealthImpactScore - regression.
+   - HealthImpactScore: A score indicating the overall health impact based on air quality and other related factors, ranging from 0 to 100.
 
-## Project Structure
+   - HealthImpactClass: Classification of the health impact based on the HealthImpactScore
+
+
+## Models Evaluated
+1. **Classification** - Logistic Regression, CatBoostClassifier
+2. **Regression** - CatBoostRegressor, LGBMRegressor, Polynomial Regression
+3. **Neural Network**
+
+
+## Best Performing Model
+- **Classification**: Logistic Regression
+- **Regression**: CatBoost Regressor
+
+
+## Key Takeaways
+- Both classification and regression are performing at a very high level on their respective tasks, neither modeling strategy demonstrated a clear superiority.
+
+
+## Project Organization
+
 ```
-├── data/
-│   └── air_quality_health_impact_data.csv # Original dataset
-├── notebooks/
-│   ├── air_quality_dataset_.ipynb
-│   └── air_quality_dataset_.py
-├── models/
-│   ├── class_CatBoost.sav # Trained CatBoost Classification model
-│   ├── class_CatBoost2.sav # Trained CatBoost Classification (lower overfitting) model
-│   ├── class_Log.sav # Trained Logistic Classification model
-│   ├── class_XGB.sav # Trained XGB Classification model
-│   ├── reg_CatBoost.sav # Trained CatBoost Regression model
-│   ├── reg_LGBM.sav # Trained LGBM Regression model 
-│   ├── reg_Poly.sav # Trained Polynomial Regression model 
-│   └── my_model.h5 # Trained Neural Network model
-└──  README.md
+├── LICENSE                               <- Open-source license
+├── README.md                             <- Project documentation
+├── data
+│   ├── raw                               <- Raw Data
+│   └── processed                         <- The final, canonical data sets for modeling
+│
+├── models                                <- Trained models, model predictions, or model summaries
+│
+├── notebooks                             <- Jupyter notebooks
+│   └── 1.0-Air-Quality-prediction.ipynb  <- Code with data preprocessing and models
+│
+├── reports                               <- Generated analysis
+│   └── figures                           <- The most important generated graphics and figures
+│
+└── requirements.txt                      <- Python dependencies
 ```
 
-## Methodology
-1. **Data Preprocessing**:
-   - Data scaling
-   - Visualizations: Correlation heatmap, boxplots
-2. **Exploratory Data Analysis (EDA)**:
-   - Class distribution
-   - Outlier detection
-3. **Model Training & Hyperparameter Tuning**:
-   - Classical ML models
-   - Neural Network: Fully connected dense layer
-4. **Model Evaluation**:
-   - Accuracy, Precision, Recall, F1 Score, AUC-ROC - classification
-   - RMSE, MAE, R²-score - regression
-   - Confusion matrix visualization
-   - Feature importance analysis
-   - **Overfitting detection:** Train vs. test performance comparison.
-     
+
+## Installation & Usage
+1. Clone the repository:
+```bash
+https://github.com/Zanyata/Air-Quality_CLASS-REG-ML-NN.git
+```
+```bash
+cd Air-Quality_CLASS-REG-ML-NN
+```
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+3. Run Jupyter Notebook:
+```bash
+jupyter notebook
+```
+Train models & evaluate performance using provided notebooks.
 
 
+--------
