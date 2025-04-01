@@ -21,6 +21,10 @@ This project addresses the challenge of assessing the health impact of air pollu
 - Deep Learning
 
 
+## Benchmarking Regression Models: Actual vs Predicted Performance Comparison
+![multiML-regression](reports/figures/multiML regression.png)
+
+
 ## Dataset
 * **Numerical Features:** All features
 * **Target Variable:** 
