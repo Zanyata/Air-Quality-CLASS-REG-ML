@@ -22,7 +22,7 @@ This project addresses the challenge of assessing the health impact of air pollu
 
 
 ## Benchmarking Regression Models: Actual vs Predicted Performance Comparison
-![multiML-regression](reports/figures/multiML regression.png)
+![multiML-regression](reports/figures/multiML-regression.png)
 
 
 ## Dataset
