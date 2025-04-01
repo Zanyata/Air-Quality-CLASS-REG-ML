@@ -73,10 +73,10 @@ This project addresses the challenge of assessing the health impact of air pollu
 ## Installation & Usage
 1. Clone the repository:
 ```bash
-https://github.com/Zanyata/Air-Quality_CLASS-REG-ML-NN.git
+https://github.com/Zanyata/Air-Quality-CLASS-REG-ML-NN.git
 ```
 ```bash
-cd Air-Quality_CLASS-REG-ML-NN
+cd Air-Quality-CLASS-REG-ML-NN
 ```
 2. Install dependencies:
 ```bash
